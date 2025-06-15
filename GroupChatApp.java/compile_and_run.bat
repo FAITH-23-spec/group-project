@@ -1,0 +1,6 @@
+@echo off
+echo Compiling GroupChatApp...
+javac -cp "lib/*" -d target/classes src/main/java/com/groupchat/*.java
+
+echo Running GroupChatApp...
+java -cp "target/classes;lib/*" com.groupchat.GroupChatApp 
